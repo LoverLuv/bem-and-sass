@@ -1,0 +1,89 @@
+a {
+  text-decoration: none;
+}
+
+.home-screen {
+  width: 100%;
+  background: #EEEFF1;
+  min-height: 700px;
+}
+.home-screen .header {
+  margin: 0 auto;
+  padding-top: 60px;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-screen .header .logo {
+  color: #34547A;
+  font-family: Revalia;
+  font-size: 48px;
+  line-height: 60px;
+}
+.home-screen .header .nav {
+  display: flex;
+}
+.home-screen .header .nav .nav__link {
+  margin-right: 40px;
+  font-family: Roboto;
+  color: black;
+  letter-spacing: 0.1em;
+}
+.home-screen .header .nav .nav__link:last-child {
+  margin-right: 0px;
+}
+.home-screen .header .nav .nav__link:hover, .home-screen .header .nav .nav__link:focus {
+  color: #34547A;
+}
+.home-screen .header .nav .nav__link:active {
+  color: #294260;
+}
+
+.basic-information {
+  max-width: 1030px;
+  margin: 0 auto;
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 145px;
+}
+.basic-information .basic-information__img {
+  max-width: 360px;
+  max-height: 230px;
+  margin-right: 130px;
+  margin-top: 20px;
+}
+.basic-information .title {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 79px;
+  color: #000000;
+}
+.basic-information .subtitle {
+  font-family: Roboto;
+  line-height: 26px;
+  color: #727272;
+}
+.basic-information .subtitle_margin-top {
+  margin-top: 60px;
+}
+.basic-information .button {
+  color: white;
+  background: #34547A;
+  padding: 25px 40px;
+  display: inline-block;
+  font-family: Roboto;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+}
+.basic-information .button:hover, .basic-information .button:focus {
+  background: #2C4A6D;
+}
+.basic-information .button:active {
+  background: #294260;
+}
+.basic-information .button_margin-top {
+  margin-top: 60px;
+}

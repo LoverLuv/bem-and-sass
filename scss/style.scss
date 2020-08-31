@@ -1,0 +1,103 @@
+// Переменные
+
+$c1: #EEEFF1;   // Бежевый
+$c2: #F9F9F9;   // Белый
+$c3: #34547A;   // Синий
+$w: 100%;
+
+// Миксины
+
+@mixin bg ($wh, $cl, $mh) {    // Для быстрого создания новых секций
+    width: $wh;
+    background: $cl;
+    min-height: $mh;
+}
+
+// Стилизация
+
+a {
+    text-decoration: none;
+}
+
+.home-screen {
+    @include bg ($w, $c1, 700px);
+    .header {
+        margin: 0 auto;
+        padding-top: 60px;
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            color: $c3;
+            font-family: Revalia;
+            font-size: 48px;
+            line-height: 60px;
+        }
+        .nav {
+            display: flex;
+            .nav__link {
+                margin-right: 40px;
+                font-family: Roboto;
+                color: black;
+                letter-spacing: 0.1em;
+                &:last-child {
+                    margin-right: 0px;
+                }
+                &:hover, &:focus {
+                    color: $c3;
+                }
+                &:active {
+                    color: #294260;
+                }
+                }
+            }
+        }
+    }
+    .basic-information {
+        max-width: 1030px;
+        margin: 0 auto;
+        margin-top: 160px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 145px;
+        .basic-information__img {
+            max-width: 360px;
+            max-height: 230px;
+            margin-right: 130px;
+            margin-top: 20px;
+        }
+            .title {
+                font-family: Roboto;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 79px;
+                color: #000000;
+            }
+            .subtitle {
+                font-family: Roboto;
+                line-height: 26px;
+                color: #727272;
+            }
+                .subtitle_margin-top {
+                    margin-top: 60px;
+                }
+            .button {
+                color: white;
+                background: $c3;
+                padding: 25px 40px;
+                display: inline-block;
+                font-family: Roboto;
+                line-height: 26px;
+                letter-spacing: 0.1em;
+                    &:hover, &:focus {
+                        background: #2C4A6D;
+                    }
+                    &:active {
+                        background: #294260;
+                    }
+            }
+                .button_margin-top {
+                    margin-top: 60px;
+                }
+    }
